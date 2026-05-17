@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анонимизация ПДн | Настройка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>🔒 Анонимизация персональных данных</h1>
+        <nav><a href="index.html">Загрузка</a> <a href="preview.html" class="active">Настройка</a> <a href="export.html">Экспорт</a></nav>
+    </header>
+
+    <main class="container">
+        <section class="config-section">
+            <h2>Выберите методы обработки</h2>
+            <div id="controls" class="controls-grid"></div>
+            <button id="applyBtn" class="btn-primary">Применить изменения</button>
+        </section>
+
+        <section class="preview-section hidden" id="previewSection">
+            <h3>Предпросмотр (первые 5 строк)</h3>
+            <table class="data-table">
+                <thead id="previewHead"></thead>
+                <tbody id="previewBody"></tbody>
+            </table>
+            <button id="exportBtn" class="btn-success" onclick="location.href='export.html'">Перейти к экспорту →</button>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>УП.02 | Дипломный проект | Факультет ИСиТ</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
